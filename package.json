@@ -1,0 +1,97 @@
+{
+  "_from": "@capacitor-community/firebase-analytics@5.0.1",
+  "_id": "@capacitor-community/firebase-analytics@5.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-6au0ovXcgtW3O8CT5cprXftELqK4qz8X3QqLc8xDM+c+77JwwriIxE+jST9y18AM2lmpTFWHbPX/Sl0fWxPtTg==",
+  "_location": "/@capacitor-community/firebase-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@capacitor-community/firebase-analytics@5.0.1",
+    "name": "@capacitor-community/firebase-analytics",
+    "escapedName": "@capacitor-community%2ffirebase-analytics",
+    "scope": "@capacitor-community",
+    "rawSpec": "5.0.1",
+    "saveSpec": null,
+    "fetchSpec": "5.0.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@capacitor-community/firebase-analytics/-/firebase-analytics-5.0.1.tgz",
+  "_shasum": "4a96525b58640ae12070088a41fcf52236b7d742",
+  "_spec": "@capacitor-community/firebase-analytics@5.0.1",
+  "_where": "/Users/yigitserin/Projects/elika-kadin-ionic-app",
+  "author": {
+    "name": "mesur.io",
+    "email": "oss@mesur.io"
+  },
+  "bugs": {
+    "url": "https://github.com/capacitor-community/firebase-analytics/issues"
+  },
+  "bundleDependencies": false,
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "deprecated": false,
+  "description": "A native plugin for firebase analytics.",
+  "devDependencies": {
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/ios": "^5.0.0",
+    "husky": "^4.2.5",
+    "np": "^7.6.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-java": "^1.6.2",
+    "pretty-quick": "^3.1.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.29.0",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "android/src/main/",
+    "android/build.gradle",
+    "dist/",
+    "ios/Plugin/",
+    "CapacitorCommunityFirebaseAnalytics.podspec"
+  ],
+  "homepage": "https://github.com/capacitor-community/firebase-analytics",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "license": "MIT",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "name": "@capacitor-community/firebase-analytics",
+  "peerDependencies": {
+    "@capacitor/core": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capacitor-community/firebase-analytics.git"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run build",
+    "release": "np",
+    "test": "echo \"No test specified\"",
+    "watch": "tsc --watch"
+  },
+  "types": "dist/esm/index.d.ts",
+  "unpkg": "dist/plugin.js",
+  "version": "5.0.1"
+}
